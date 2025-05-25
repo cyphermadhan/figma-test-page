@@ -3,7 +3,7 @@ const API_BASE = 'https://figma-plugin-images.s3.ap-south-1.amazonaws.com';
 console.log("UI script loaded");
 
 const searchInput = document.getElementById('search');
-const categorySelect = document.getElementById('category');
+const categorySelect = document.getElementById("category");
 const iconGrid = document.getElementById('iconGrid');
 
 let icons = [];
