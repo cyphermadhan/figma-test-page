@@ -1,4 +1,4 @@
-const API_BASE = 'https://97baaa5b9b939cb01d74193689d81a01.r2.cloudflarestorage.com';
+const API_BASE = 'https://figma-assets-store.s3.ap-south-1.amazonaws.com';
 
 console.log("UI script loaded");
 
