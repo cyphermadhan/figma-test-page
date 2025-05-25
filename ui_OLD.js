@@ -1,4 +1,4 @@
-const API_BASE = 'https://figma-assets-store.s3.ap-south-1.amazonaws.com';
+const API_BASE = 'https://figma-plugin-images.s3.ap-south-1.amazonaws.com';
 
 console.log("UI script loaded");
 
