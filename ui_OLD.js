@@ -11,7 +11,7 @@ let icons = [];
 async function loadIcons() {
   try {
     console.log("Fetching icons...");
-    const res = await fetch(`${API_BASE}/figma-3d-assets/image-index.json`);
+    const res = await fetch(`${API_BASE}/image-index.json`);
     icons = await res.json();
     console.log("Icons loaded:", icons);
     filterIcons();
@@ -40,12 +40,12 @@ function renderIcons(iconList) {
     const item = document.createElement('div');
     item.className = 'icon-item';
     item.innerHTML = `
-      <img src="${API_BASE}/figma-3d-assets/${icon.thumbnail}" alt="${icon.name}" />
+      <img src="${API_BASE}/${icon.thumbnail}" alt="${icon.name}" />
       <div class="icon-label">${icon.name}</div>
     `;
 
     item.addEventListener('click', async () => {
-      const response = await fetch(`${API_BASE}/figma-3d-assets/${icon.key}`);
+      const response = await fetch(`${API_BASE}/${icon.key}`);
       const buffer = await response.arrayBuffer();
       const bytes = new Uint8Array(buffer);
       parent.postMessage({
